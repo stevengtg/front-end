@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<style>
+    .background-image {
+        background-image: url('./assets/Frame\ 52.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    .border-right {
+        border-right: 2px solid darkblue;
+    }
+
+    .accordion-item {
+        background: linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%);
+        border: 2px solid transparent;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .accordion-item.active {
+        border-color: white;
+    }
+
+    .accordion-button {
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
+
+    .accordion-button.active {
+        background: linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%);
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="./assets/Logo Baru-06b 2.png" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Prakerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Resource</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex flex-wrap">
+                <button class="btn fs-5"
+                    style="color: #24356E; border: 2px solid rgb(34, 39, 113); margin-right: 10px;">LOGIN</button>
+                <button class="btn fs-5 fw-semibold ms-auto"
+                    style="color:#FFFFFF; background-color: rgb(34, 39, 113)">DAFTAR</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+    </section>
+    <section class="background-image"
+        style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 100vh;">
+        <div class="content">
+            <div class="container py-3">
+                <button class="btn fs-5" style="color: #FFFFFF; margin-bottom: 10px;">&lt; Kembali</button>
+                <div class="card mb-3 py-5 px-3" style="max-width: 900px;">
+                    <div class="row g-0 d-flex align-items-center">
+                        <div class="col-md-4">
+                            <img src="./assets/hai.png" class="img-fluid rounded-start" style="margin: auto;">
+                            <div class="row align-items-center">
+                                <div class="d-flex">
+                                    <img src="./assets/bintang.png" style="width: 100px;" class="card-img-top">
+                                    <div class="col my-2">
+                                        <h6 class="mb-0 fw-bold" style="color: #24356E;">4.9 (2.345 rating)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body mx-1 border-right">
+                                <h5 class="card-title small">Membuat Desain Media Promosi Menggunakan Adobe Photoshop
+                                    untuk
+                                    Desainer Grafis Pemula</h5>
+                                <div class="d-flex">
+                                    <p class="m-0 fw-semibold small"
+                                        style="color:#FFFFFF; border-radius: 0 10px 0 0; background-color: rgb(224,105,37,1)">
+                                        Live Webinar</p>
+                                </div>
+                                <p class="card-text small">Peserta pelatihan mampu membuat media promosi secara mandiri
+                                    dengan menggunakan Adobe Photoshop dengan menunjukkan minimal 70% penguasaan materi
+                                    pada
+                                    sesi unjuk keterampilan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-3">
+                            <div class="text-section d-flex flex-column align-items-center">
+                                <h3 class="fs-5">Rp 1.500.000</h3>
+                                <button class="btn fs-8 fw-semibold px-4"
+                                    style="color:#FFFFFF; background-color: rgb(195, 33, 33)">Beli Sekarang<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-arrow-up-right" viewBox="0 0 18 20">
+                                        <path fill-rule="evenodd"
+                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+                                    </svg></button>
+                                <div class="py-3">
+                                    <div class="card" style="background-color: #F5BC4D; color: #24356E;">
+                                        <div class="card-body">
+                                            <p class="card-text fw-semibold" style="font-size: 10px;">Jadwal Gelombang
+                                                Terdekat</p>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary fw-bold"
+                                                style="color: #24356E !important; font-size: 10px;">
+                                                Senin, 5 Feb 2024 - 7 hari lagi</h6>
+                                            <a href="#" class="card-link" style="font-size: 11px;">Jadwal Lainnya</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="content">
+                    <div class="container">
+                        <div class="card mb-3 py-5 px-3" style="max-width: 900px;">
+                            <div class="row g-0 d-flex align-items-center">
+                                <h5 class="fw-bold" style="color: #24356E;">Jadwal Gelombang Webinar Terdekat</h5>
+                                <div class="d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                                        style="color: #24356E;">
+                                        <path fill="currentColor"
+                                            d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8q0 .425.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22" />
+                                    </svg>
+                                    <span style="font-size: 12px; margin-left: 5px;"><strong>Berikut jadwal gelombang
+                                            yang tersedia. Kamu bisa pilih jadwal saat melakukan pembelian kelas di
+                                            mitra kami</strong> (Khusus Peserta Program Prakerja)</span>
+                                </div>
+                                <text style="margin-left: 20px;">Menampilkan 4 jadwal tersedia</text>
+                                <div class="py-3">
+                                    <div class="card">
+                                        <div class="card"
+                                            style="background:linear-gradient(90deg, rgba(224,105,37,1) 0%, rgba(195,33,33,1) 100%);">
+                                            <h5 class="card-header" style="color: #ffffff; font-size: 18px;">Membuat
+                                                Desain
+                                                Media Promosi
+                                                Menggunakan Adobe untuk
+                                                Desainer Grafis Pemula | 5 Sesi </h5>
+                                            <div class="card-body">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16"
+                                                    style="color: #F5BC4D; margin-bottom: 2px;">
+                                                    <path
+                                                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                                </svg>
+                                                <span style="color: #fff; font-size: 15px; margin-left: 5px;"><strong>5-9
+                                                        Feb
+                                                        2024</strong> | Senin-Jum'at</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="1  18 16"
+                                                    style="color: #F5BC4D; margin-left: 50px; margin-top: 1px;">
+                                                    <path fill="currentColor" d="M9 8a1 1 0 1 1-2 0a1 1 0 0 1 2 0" />
+                                                    <path fill="currentColor" fill-rule="evenodd"
+                                                        d="M9.68 5.26a.75.75 0 0 1 1.06 0a3.875 3.875 0 0 1 0 5.48a.75.75 0 1 1-1.06-1.06a2.375 2.375 0 0 0 0-3.36a.75.75 0 0 1 0-1.06m-3.36 0a.75.75 0 0 1 0 1.06a2.375 2.375 0 0 0 0 3.36a.75.75 0 1 1-1.06 1.06a3.875 3.875 0 0 1 0-5.48a.75.75 0 0 1 1.06 0"
+                                                        clip-rule="evenodd" />
+                                                    <path fill="currentColor" fill-rule="evenodd"
+                                                        d="M11.89 3.05a.75.75 0 0 1 1.06 0a7 7 0 0 1 0 9.9a.75.75 0 1 1-1.06-1.06a5.5 5.5 0 0 0 0-7.78a.75.75 0 0 1 0-1.06m-7.78 0a.75.75 0 0 1 0 1.06a5.5 5.5 0 0 0 0 7.78a.75.75 0 1 1-1.06 1.06a7 7 0 0 1 0-9.9a.75.75 0 0 1 1.06 0"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                                <span class="fw-semibold"
+                                                    style="color: #fff; font-size: 15px; margin-left: 0px;">Live
+                                                    Webinar
+                                                    via Zoom</span>
+                                                <div class="d-flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16"
+                                                        style="color: #F5BC4D; margin-right: 2px; margin-top: 10px;">
+                                                        <path d=" M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1
+                                                0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                                    </svg>
+                                                    <span class="fw-semibold"
+                                                        style="color: #fff; font-size: 15px; margin-left: 8px; margin-top: 7px;">09.00
+                                                        - 12.00 WIB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16"
+                                                style="color: #25B155;">
+                                                <path
+                                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                            </svg>
+                                            <span class="fw-bold"
+                                                style="color: #24356E; font-size: 15px; margin-left: 5px;">Kuota Masih
+                                                Tersedia</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-3">
+                                    <div class="card">
+                                        <div class="card"
+                                            style="background:linear-gradient(90deg, rgba(224,105,37,1) 0%, rgba(195,33,33,1) 100%);">
+                                            <h5 class="card-header" style="color: #ffffff; font-size: 18px;">Membuat
+                                                Desain
+                                                Media Promosi
+                                                Menggunakan Adobe untuk
+                                                Desainer Grafis Pemula | 5 Sesi </h5>
+                                            <div class="card-body">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16"
+                                                    style="color: #F5BC4D; margin-bottom: 2px;">
+                                                    <path
+                                                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                                </svg>
+                                                <span style="color: #fff; font-size: 15px; margin-left: 5px;"><strong>5-9
+                                                        Feb
+                                                        2024</strong> | Senin-Jum'at</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="1  18 16"
+                                                    style="color: #F5BC4D; margin-left: 50px; margin-top: 1px;">
+                                                    <path fill="currentColor" d="M9 8a1 1 0 1 1-2 0a1 1 0 0 1 2 0" />
+                                                    <path fill="currentColor" fill-rule="evenodd"
+                                                        d="M9.68 5.26a.75.75 0 0 1 1.06 0a3.875 3.875 0 0 1 0 5.48a.75.75 0 1 1-1.06-1.06a2.375 2.375 0 0 0 0-3.36a.75.75 0 0 1 0-1.06m-3.36 0a.75.75 0 0 1 0 1.06a2.375 2.375 0 0 0 0 3.36a.75.75 0 1 1-1.06 1.06a3.875 3.875 0 0 1 0-5.48a.75.75 0 0 1 1.06 0"
+                                                        clip-rule="evenodd" />
+                                                    <path fill="currentColor" fill-rule="evenodd"
+                                                        d="M11.89 3.05a.75.75 0 0 1 1.06 0a7 7 0 0 1 0 9.9a.75.75 0 1 1-1.06-1.06a5.5 5.5 0 0 0 0-7.78a.75.75 0 0 1 0-1.06m-7.78 0a.75.75 0 0 1 0 1.06a5.5 5.5 0 0 0 0 7.78a.75.75 0 1 1-1.06 1.06a7 7 0 0 1 0-9.9a.75.75 0 0 1 1.06 0"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                                <span class="fw-semibold"
+                                                    style="color: #fff; font-size: 15px; margin-left: 0px;">Live
+                                                    Webinar
+                                                    via Zoom</span>
+                                                <div class="d-flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16"
+                                                        style="color: #F5BC4D; margin-right: 2px; margin-top: 10px;">
+                                                        <path d=" M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1
+                                                0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                                    </svg>
+                                                    <span class="fw-semibold"
+                                                        style="color: #fff; font-size: 15px; margin-left: 8px; margin-top: 7px;">09.00
+                                                        - 12.00 WIB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16"
+                                                style="color: #25B155;">
+                                                <path
+                                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                            </svg>
+                                            <span class="fw-bold"
+                                                style="color: #24356E; font-size: 15px; margin-left: 5px;">Kuota Masih
+                                                Tersedia</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-3">
+                                    <div class="card">
+                                        <div class="card"
+                                            style="background:linear-gradient(90deg, rgba(224,105,37,1) 0%, rgba(195,33,33,1) 100%);">
+                                            <h5 class="card-header" style="color: #ffffff; font-size: 18px;">Membuat
+                                                Desain
+                                                Media Promosi
+                                                Menggunakan Adobe untuk
+                                                Desainer Grafis Pemula | 5 Sesi </h5>
+                                            <div class="card-body">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16"
+                                                    style="color: #F5BC4D; margin-bottom: 2px;">
+                                                    <path
+                                                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                                </svg>
+                                                <span style="color: #fff; font-size: 15px; margin-left: 5px;"><strong>5-9
+                                                        Feb
+                                                        2024</strong> | Senin-Jum'at</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="1  18 16"
+                                                    style="color: #F5BC4D; margin-left: 50px; margin-top: 1px;">
+                                                    <path fill="currentColor" d="M9 8a1 1 0 1 1-2 0a1 1 0 0 1 2 0" />
+                                                    <path fill="currentColor" fill-rule="evenodd"
+                                                        d="M9.68 5.26a.75.75 0 0 1 1.06 0a3.875 3.875 0 0 1 0 5.48a.75.75 0 1 1-1.06-1.06a2.375 2.375 0 0 0 0-3.36a.75.75 0 0 1 0-1.06m-3.36 0a.75.75 0 0 1 0 1.06a2.375 2.375 0 0 0 0 3.36a.75.75 0 1 1-1.06 1.06a3.875 3.875 0 0 1 0-5.48a.75.75 0 0 1 1.06 0"
+                                                        clip-rule="evenodd" />
+                                                    <path fill="currentColor" fill-rule="evenodd"
+                                                        d="M11.89 3.05a.75.75 0 0 1 1.06 0a7 7 0 0 1 0 9.9a.75.75 0 1 1-1.06-1.06a5.5 5.5 0 0 0 0-7.78a.75.75 0 0 1 0-1.06m-7.78 0a.75.75 0 0 1 0 1.06a5.5 5.5 0 0 0 0 7.78a.75.75 0 1 1-1.06 1.06a7 7 0 0 1 0-9.9a.75.75 0 0 1 1.06 0"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                                <span class="fw-semibold"
+                                                    style="color: #fff; font-size: 15px; margin-left: 0px;">Live
+                                                    Webinar
+                                                    via Zoom</span>
+                                                <div class="d-flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16"
+                                                        style="color: #F5BC4D; margin-right: 2px; margin-top: 10px;">
+                                                        <path d=" M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1
+                                                0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                                    </svg>
+                                                    <span class="fw-semibold"
+                                                        style="color: #fff; font-size: 15px; margin-left: 8px; margin-top: 7px;">09.00
+                                                        - 12.00 WIB</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16"
+                                                style="color: #25B155;">
+                                                <path
+                                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                            </svg>
+                                            <span class="fw-bold"
+                                                style="color: #24356E; font-size: 15px; margin-left: 5px;">Kuota Masih
+                                                Tersedia</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn fs-10 text-center fw-semibold ms-auto py-2 px-2"
+                                    style="color:#FFFFFF; background-color: rgb(34, 39, 113); width: fit-content; margin: 0 auto">Tampilkan
+                                    Jadwal
+                                    Lainnya</button>
+                            </div>
+            </section>
+            <div class="content">
+                <div class="container">
+                    <div class="card" style="max-width: 900px;">
+                        <div class="card-body">
+                            <div class="border-bottom">
+                                <h6 style="font-size: 30px; color: #24356E;">Tentang Kelas</h6>
+                            </div>
+                            <p>Pelatihan ini menggunakan moda <strong>Webinar</strong></p>
+                            <p>Okupasi Pelatihan: <strong>Desainer Grafis dan Multimedia</strong></p>
+                            <p>Rujukan Okupasi: <strong>IndoTaSK 2020 / Desainer Grafis dan Multimedia</strong>
+                            </p>
+                            <h5 class="fw-bold" style="color: rgb(12, 12, 118);">
+                                Gambar Pelatihan
+                            </h5>
+                            <p>Program ini memberikan pengetahuan dasar terkait pekerjaan sebagai illustrator
+                                dengan menggunakan Adobe Photoshop. Seorang Illustrator diharapkan mahir
+                                menggunakan perangkat komputer dan aplikasi, terutama Photoshop, untuk persiapan
+                                perangkat lunak, sketsa sederhana, pemilihan tone warna, dan pembuatan ilustrasi
+                                yang dibutuhkan dalam dunia industri dan bisnis.</p>
+                            <text class="fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#demo"
+                                aria-expanded="true" aria-controls="demo" style="color: #24356E;">
+                                Selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor" fill-rule="evenodd" d="m6 7l6 6l6-6l2 2l-8 8l-8-8z" />
+                                </svg>
+                            </text>
+                        </div>
+                        <div id="demo" class="collapse">
+                            Lorem ipsum text...
+                        </div>
+                        <div class="container">
+                            <div class="border-top">
+                                <h4 style="font-size: 20px; color: rgb(11, 11, 122);"><strong>Instruktur</strong></h4>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <img src="./assets/Ellipse 13.png" alt="">
+                                            <div class="accordion-body fw-semibold">
+                                                Ifan Yuda Pratama <br> <span>Karisma Academy, Instruktur Desain
+                                                    Grafis</span>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion py-4" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseTwo">
+                                            <img src="./assets/Ellipse 14.png" alt="">
+                                            <div class="accordion-body fw-semibold">
+                                                Sam Aji Sadewo <br> <span>Karisma Academy, Instruktur Desain
+                                                    Grafis</span>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                            aria-controls="panelsStayOpen-collapseThree">
+                                            <img src="./assets/Ellipse 15.png" alt="">
+                                            <div class="accordion-body fw-semibold">
+                                                Arsya Nugraha <br> <span>Karisma Academy, Instruktur Desain
+                                                    Grafis</span>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section>
+                    <div class="content">
+                        <div class="container py-3">
+                            <div class="d-flex">
+                                <img src="assets/Rectangle 208.png" style="width: 10px; height: 30px;">
+                                <p class="fw-bold" style=" color: #C32121; font-size: 20px">
+                                    &nbsp;Silabus Kelas</p>
+                            </div>
+                            <div class="container py-3">
+                                <span class="badge text-bg-primary"
+                                    style="font-size: 18px; background: linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%);"><img
+                                        src="./assets/for.png"> Formative
+                                    Test</span>
+                                <span class="badge text-bg-secondary"
+                                    style="font-size: 18px; background: linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%);"><img
+                                        src="./assets/web.png" alt=""> Live
+                                    Webinar</span>
+                                <span class="badge text-bg-success"
+                                    style="font-size: 18px; background: linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%);"><img
+                                        src="./assets/prepos.png" alt=""> Pre/Post
+                                    Test</span>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="card">
+                                <div class="card-header small"
+                                    style="background:linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%); color: #FFFFFF;">
+                                    Hari 1
+                                    <h6>Perancangan Poster Makanan dengan Adobe Photoshop</h6>
+                                    <p class="small">3 Jam Pertemuan</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><img src="./assets/Silabus/read.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 1</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/web.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 1</span>
+                                    </p>
+                                    <p class="card-text"> <img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 1</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 1</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="card">
+                                <div class="card-header small"
+                                    style="background:linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%); color: #FFFFFF;">
+                                    Hari 1
+                                    <h6>Perancangan Poster Makanan dengan Adobe Photoshop</h6>
+                                    <p class="small">3 Jam Pertemuan</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><img src="./assets/Silabus/read.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 2</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/web.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 2</span>
+                                    </p>
+                                    <p class="card-text"> <img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 2</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 2</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="card">
+                                <div class="card-header small"
+                                    style="background:linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%); color: #FFFFFF;">
+                                    Hari 1
+                                    <h6>Perancangan Poster Makanan dengan Adobe Photoshop</h6>
+                                    <p class="small">3 Jam Pertemuan</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><img src="./assets/Silabus/read.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 3</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/web.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 3</span>
+                                    </p>
+                                    <p class="card-text"> <img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 3</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 3</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="card">
+                                <div class="card-header small"
+                                    style="background:linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%); color: #FFFFFF;">
+                                    Hari 1
+                                    <h6>Perancangan Poster Makanan dengan Adobe Photoshop</h6>
+                                    <p class="small">3 Jam Pertemuan</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><img src="./assets/Silabus/read.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 4</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/web.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 4</span>
+                                    </p>
+                                    <p class="card-text"> <img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 4</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 4</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container py-3">
+                            <div class="card">
+                                <div class="card-header small"
+                                    style="background:linear-gradient(90deg, rgba(224, 105, 37, 1) 0%, rgba(195, 33, 33, 1) 100%); color: #FFFFFF;">
+                                    Hari 1
+                                    <h6>Perancangan Poster Makanan dengan Adobe Photoshop</h6>
+                                    <p class="small">3 Jam Pertemuan</p>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><img src="./assets/Silabus/read.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 5</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/web.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 5</span>
+                                    </p>
+                                    <p class="card-text"> <img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 5</span>
+                                    </p>
+                                    <p class="card-text"><img src="./assets/Silabus/test.png" alt="">
+                                        <span class="fw-bold" style="color: black;">Reading Material</span>
+                                        <span>Sesi 5</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <section>
+                <div class="content">
+                    <div class="container py-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="fw-bold" style="color: #24356E;">Ulasan Kelas</h5>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="rounded-4 text-center"
+                                            style="background-color: rgb(37, 177, 85); padding: 20px; width: 160px; height: 145px;">
+                                            <p class="fw-bold" style="font-size: 45px; color: white;">4.9</p>
+                                            <text class="fw-bold" style="font-size: 14px; color: white;">Dari 2.345
+                                                Peserta</text>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="Success example" aria-valuenow="95"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-success" style="width: 95%;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="assets/Group 132.png" class="img-fluid"
+                                                        style="width: 100px; margin-bottom: 13px;">
+                                                    <span class="fw-bold" style="color: #24356E;">95%</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="Success example" aria-valuenow="95"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-success" style="width: 5%;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="assets/Group 133.png" class="img-fluid"
+                                                        style="width: 100px; margin-bottom: 12px;">
+                                                    <span class="fw-bold" style="color: #24356E;">5%</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="Success example" aria-valuenow="95"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-success" style="width: 0%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="assets/Group 134.png" class="img-fluid"
+                                                        style="width: 100px; margin-bottom: 12px;">
+                                                    <span class="fw-bold" style="color: #24356E;">0%</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="Success example" aria-valuenow="95"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-success" style="width: 0%;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="assets/Group 135.png" class="img-fluid"
+                                                        style="width: 100px; margin-bottom: 12px;">
+                                                    <span class="fw-bold" style="color: #24356E;">0%</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div class="progress" role="progressbar"
+                                                        aria-label="Success example" aria-valuenow="95"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar bg-success" style="width: 0%;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="assets/Group 136.png" class="img-fluid"
+                                                        style="width: 100px; margin-bottom: 12px;">
+                                                    <span class="fw-bold" style="color: #24356E;">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/Frame 80.png" style="width: 100px; margin-top: 25px;">
+                                        <p style="color:rgb(8, 8, 121);">Materinya mudah dipahami</p>
+                                        <span style="color: rgb(16, 16, 119);"><strong>Mochammad Wildan</strong>| 2
+                                            Bulan
+                                            lalu</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/Frame 80.png" style="width: 100px; margin-top: 25px;">
+                                        <p style="color:rgb(8, 8, 121);">Instrukturnya Jelas</p>
+                                        <span style="color: rgb(16, 16, 119);"><strong>Najwa Ramadhania</strong>| 2
+                                            Bulan
+                                            lalu</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/Frame 80.png" style="width: 100px; margin-top: 25px;">
+                                        <p style="color:rgb(8, 8, 121);">Webinarnya Lancar</p>
+                                        <span style="color: rgb(16, 16, 119);"><strong>Lukman</strong>| 2
+                                            Bulan
+                                            lalu</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/Frame 80.png" style="width: 100px; margin-top: 25px;">
+                                        <p style="color:rgb(8, 8, 121);">Kelasnya Seru banget</p>
+                                        <span style="color: rgb(16, 16, 119);"><strong>Kefi</strong>| 2
+                                            Bulan
+                                            lalu</span>
+                                    </div>
+                                    <div id="demo" class="collapse">
+                                        <div>
+                                            <img src="./assets/Frame 80.png" style="width: 100px; margin-top: 25px;">
+                                            <p style="color:rgb(8, 8, 121);">Kelasnya Tidak Membosankan</p>
+                                            <span style="color: rgb(16, 16, 119);"><strong>Mochammad Luki</strong>| 2
+                                                Bulan
+                                                lalu</span>
+                                        </div>
+                                    </div>
+                                    <text class="fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#demo"
+                                        aria-expanded="true" aria-controls="demo" style="color: #24356E;">
+                                        Selengkapnya
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                                d="m6 7l6 6l6-6l2 2l-8 8l-8-8z" />
+                                        </svg>
+                                    </text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <section
+            style="width: 100%; background:linear-gradient(90deg, #24356E 0%, #24356E 100%); margin: 0; padding: 0;">
+            <div class="container">
+                <div class="card-title text-center fw-bold" style="margin-top: 30px;">Rekomendasi Kelas Lainnya</div>
+                <div class="carousel py-2 px-5" data-flickity='{ "groupCells": true }'>
+                    <div class="col-md-3 py-3 px-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Desain Branding Produk
+                                    dengan Adobe Illustrator</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 px-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Pengembangan Pemrograman website bagi programmer 1.png">
+                            <div class="card-body">
+                                <h5 style="font-size: 14px;">Pengembangan Pemrograman
+                                    Website Bagi Programmer</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 px-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Identitas Visual dengan CorelDraw 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Desain Identitas Visual
+                                    dengan Corel Draw</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 px-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Membuat Media Promosi 3d menggunakan Blender 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Media Promosi 3D
+                                    Menggunakan Blender</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 p-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Desain Media Promosi di Adobe Photoshop untuk
+                                    Desainer Grafis
+                                    Pemula</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 p-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Desain Media Promosi di Adobe Photoshop untuk
+                                    Desainer Grafis
+                                    Pemula</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 p-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Desain Media Promosi di Adobe Photoshop untuk
+                                    Desainer Grafis
+                                    Pemula</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 p-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Desain Media Promosi di Adobe Photoshop untuk
+                                    Desainer Grafis
+                                    Pemula</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 p-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Desain Media Promosi di Adobe Photoshop untuk
+                                    Desainer Grafis
+                                    Pemula</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 p-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Desain Media Promosi di Adobe Photoshop untuk
+                                    Desainer Grafis
+                                    Pemula</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 p-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Desain Media Promosi di Adobe Photoshop untuk
+                                    Desainer Grafis
+                                    Pemula</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 p-4">
+                        <div class="card h-100" style="width: 15rem;">
+                            <img src="./assets/Desain Branding Produk dengan Adobe Illustrator 1.png">
+                            <div class="card-body">
+                                <h5 class="fs-6">Membuat Desain Media Promosi di Adobe Photoshop untuk
+                                    Desainer Grafis
+                                    Pemula</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                                <div class="row-flex justify-content-between align-items-center">
+                                    <img src="assets/Frame 80.png" style="width: 70px;">
+                                    <h6 class="small">4.9 | 2.345 Peserta</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="container py-1">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top" style="color: black;">
+                <div class="col mb-1">
+                    <img src="./assets/Logo Baru-06b 2.png" width="180">
+                    <p class="text-center">Karisma Academy : Digital Media Training Center</p>
+                    <p class="fw-bold">Alamat</p>
+                    <p>Jl. Watu Gong No. 18, Kel. Ketawanggede, Kec. Lowokwaru,
+                        Kota Malang, Jawa Timur 65145</p>
+                </div>
+
+
+                <div class="col mb-3">
+
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Program Karisma</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kelas</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kelas
+                                Prakerja</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>About Karisma</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kebijakan
+                                Priasi</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ketentuan
+                                Pengguna</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tentang
+                                Kami</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Career at
+                                Karimsa</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Hubungi Karisma</h5>
+                    <ul class="nav flex-column">
+                        <div class="row-6 fs-8">
+                            <img src="./assets/logo/instagram_svgrepo.com.png" alt="" width="17">&nbsp;@karismaacademy
+                        </div>
+
+                        <div class="row-6 fs-8">
+                            <img src="./assets/logo/tiktok-outline_svgrepo.com.png" alt=""
+                                width="17">&nbsp;@karismaacademy
+                        </div>
+
+                        <div class="row-6 fs-8">
+                            <img src="./assets/logo/ic_baseline-whatsapp.png" alt="" width="17">&nbsp;082131740701
+                        </div>
+
+                        <div class="row-6 fs-8">
+                            <img src="./assets/logo/ant-design_linkedin-outlined.png" alt="" width="17">&nbsp;Karisma
+                            Academy
+                        </div>
+                    </ul>
+                </div>
+                <p class="text-body-secondary text-center">© 2023 PT. Karisma Garuda Mulia</p>
+            </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
